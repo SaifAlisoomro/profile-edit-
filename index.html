@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+   <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="/script.js">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img id="profilePic" src="/Screenshot (40).png" alt="Profile Picture">
+            <h2 id="userName">SAIF SOOMRO</h2>
+            <p id="userBio"> Web Doveloper from PAKISTAN</p>
+            <button id="editButton">Edit Profile</button>
+        </div>
+
+        <div class="edit-form-container" id="editFormContainer">
+            <form id="editForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="bio">Bio:</label>
+                <input type="text" id="bio" placeholder="Enter your bio" required>
+
+                <label for="picture">Profile Picture URL:</label>
+                <input type="url" id="picture" placeholder="Enter profile picture URL">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
